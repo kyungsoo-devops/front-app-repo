@@ -72,8 +72,11 @@ jobs:
       - name: Commit files
         run: |
           cd k8s-manifest-repo
-          git config --global user.email "kyungsoo.kim@beautyselection.co.kr"
-          git config --global user.name "kyungsoo-devops"
-          git commit -m "Update image tag"
-          git push -u origin main
+          #git config --global user.email "kyungsoo.kim@beautyselection.co.kr"
+          # git config --global user.name "kyungsoo-devops"
+          #          git commit -m "Update image tag"
+          #          git push -u origin main
+          git add .
+          git commit -m "update imgae tag"
+          git push
 
